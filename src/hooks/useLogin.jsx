@@ -32,7 +32,7 @@ export const useLogin = () => {
 			body: JSON.stringify({ email, password }),
 		};
 
-		const res = await fetch('http://localhost:3000/api/user/login', options);
+		const res = await fetch('https://workout-tracker-api-bemr.onrender.com/api/user/login', options);
 		const data = await res.json();
 
 		if (!res.ok) {

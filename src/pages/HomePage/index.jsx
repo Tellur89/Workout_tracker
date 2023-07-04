@@ -16,7 +16,7 @@ const HomePage = () => {
 	useEffect(() => {
 		const fetchWorkouts = async () => {
 			try {
-				const res = await fetch('http://localhost:3000/api/workouts/', {
+				const res = await fetch('https://workout-tracker-api-bemr.onrender.com/api/workouts/', {
 					headers: {
 						Authorization: `Bearer ${user.token}`,
 					},

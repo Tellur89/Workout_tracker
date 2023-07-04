@@ -22,7 +22,7 @@ const WorkoutDetails = ({ workout }) => {
 
 		try {
 			const id = workout._id;
-			const res = await fetch(`http://localhost:3000/api/workouts/${id}`, options);
+			const res = await fetch(`https://workout-tracker-api-bemr.onrender.com/api/workouts/${id}`, options);
 			const data = await res.json();
 
 			if (res.ok) {

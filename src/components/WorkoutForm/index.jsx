@@ -54,7 +54,7 @@ const WorkoutForm = () => {
 		};
 
 		try {
-			const res = await fetch('http://localhost:3000/api/workouts/', options);
+			const res = await fetch('https://workout-tracker-api-bemr.onrender.com/api/workouts/', options);
 			const data = await res.json();
 
 			if (!res.ok) {
